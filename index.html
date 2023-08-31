@@ -46,7 +46,8 @@
         </pre>
     </h2>
     <h3><pre>
-        undefined
+        undefined - because there is variable x is present in the function scope but it declare after the consoling,
+        and if the variable is present first of all in the execution context , memory allocation executes first and initially it set as undifined.
     </pre></h3>
     <h2>Q5. <pre>"Print output: 
         var x = 21;
@@ -58,6 +59,8 @@
         };
         "</pre></h2>
     <pre><h3>undefined</h3><h3>21</h3></pre>
+    <h3>because we calling the function before consoling from the function it will show undefined from
+        the above question concept and after that it will show 21 as variable x initialises 21.</h3>
     <h2>Q6. <pre>
         "Print output
             var x = 21;
@@ -77,6 +80,7 @@
     </pre></h2>
     <h3>20</h3>
     <h3>40</h3>
+    <h3>according to the calling of functions the order of the answer shows not from the globle as variables are present inside the functional scope.</h3>
     <h2>Q7. Write a function that accepts parameter n and returns factorial of n.</h2>
     <h3><pre>
         function fact(n)
@@ -125,6 +129,7 @@ function DisplayData(data, batch){
 DisplayData(""PrepBytes"", FindSum(10, 9));"
     </pre></h2>
     <h3>i am from PrepBytes and My batch is EA19</h3>
+    <h3>the first parameter of the function refers to the prepbytes and the second refers to the FindSum() function</h3>
     <h2>Q2. <pre>
         "Guess the output
 
@@ -135,6 +140,7 @@ const Abc = function(){
 }"
     </pre></h2>
     <h3>ReferenceError: Cannot access 'Abc' before initialization</h3>
+    <h3> Because it stores in a variable i.e constant and it cannot be accessed before it can initialised</h3>
     <h2>Q2. <pre>
         "Guess the output
 var a = 10;
@@ -143,7 +149,8 @@ var a = 10;
     var a = 20;
 })();"
     </pre></h2>
-    <h3>undefined</h3>
+    <h3>undefined- because there is variable a is present in the function scope but it declare after the consoling,
+        and if the variable is present first of all in the execution context , memory allocation executes first and initially it set as undifined.</h3>
     <h2>Q4. <pre>
         "Guess the Output
 const greet =  function(name){
@@ -157,5 +164,8 @@ const greet_message = greet('EA19');
 greet_message(""Welcome To PrepBytes"")"
     </pre></h2>
     <h3>Hi!! EA19, Welcome To PrepBytes</h3>
+    <h3>in the calling of the function it stores in the variable greet and it will take a parameter name as argument passed EA19 it will acquires and 
+        the same greet function stored into another variable and the second parameter is m and the argument for that is  Welcome To PrepBytes.
+    </h3>
 </body>
 </html>
